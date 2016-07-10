@@ -1,10 +1,19 @@
 # Triangle
-Minimal functional triangle classifier.
+Minimal functional triangle classifier. Browser and Node compatible.
 
-## #classify `(a: number, b: number, c: number) -> str`
+## classify `(a: number, b: number, c: number) -> enum:str`
 Classifies a triangle defined by its three sides, `a, b, c` as natural numbers.
 
+Return `EQUILATERAL | ISOSCELES | SCALENE`.
+
 If the triangle is impossible, throws `Error`.
+
+# Tests
+To run the tests, installs mocha, chai and opn.
+
+    $ npm install
+    $ npm test
+    $ npm run test-browser
 
 # Discussion
 The problem is sufficiently simple to be solved by a single function.
